@@ -4,5 +4,12 @@
 #include <math.h>
 
 int main(){
-    orintf("Hola Mundo");
+    printf("Hola Mundo\n");
+    int x = 10;
+    int *puntero = &x;
+    printf("Contenido del puntero:%d\n", *puntero);
+    printf("Direccion de memoria almacenada por el puntero:%d\n", puntero);
+    printf("Direccion de memoria de la variable:%d\n", &x);
+    printf("Direccion de memoria del puntero:%d\n", &puntero);
+    printf("Direccion de memoria del puntero:%zu\n", sizeof(x));
 }
